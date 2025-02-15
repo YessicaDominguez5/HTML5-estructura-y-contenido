@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Input</title>
+</head>
+<body>
+    
+    <form action="">
+
+        <!--Input de Texto-->
+
+        <label for="">Tipo de Texto</label>
+        <input type="text">
+        <br>
+        <br>
+
+        <label for="">Busqueda</label>
+        <input type="search">  <!--Tiene una X para borrar todo el texto-->
+        <br>
+        <br>
+
+        <label for="">URL</label>
+        <input type="url">
+        <br>
+        <br>
+
+        <label for="">Email</label>
+        <input type="email">
+        <br>
+        <br>
+
+        <label for="">Contraseña</label>
+        <input type="password">
+        <br>
+        <br>
+
+        <label for="">Campo de Texto</label>
+        <textarea></textarea>
+        <br>
+        <hr>
+        <br>
+
+         <!--Input Numerico-->
+        <label for="">Tipo Numerico</label>
+        <input type="number">
+        <br>
+        <br>
+
+        <label for="">Rango</label>
+        <input type="range">
+        <br>
+        <hr>
+        <br>
+
+         <!--Input de Fecha y Hora-->
+
+         <label for="">Fecha</label>
+         <input type="date">
+         <br>
+         <br>
+
+         <label for="">Hora</label>
+         <input type="time">
+         <br>
+         <br>
+
+         <label for="">Fecha y Hora</label>
+         <input type="datetime-local">
+         <br>
+         <br>
+
+         <label for="">Mes</label>
+         <input type="month">
+         <br>
+         <br>
+
+         <label for="">Semana</label>
+         <input type="week">
+         <br>
+         <hr>
+         <br>
+
+         <!--Input de Seleccion-->
+
+         <label for="">Radio Button</label>
+         <input type="radio">
+         <br>
+         <br>
+
+         <label for="">CheckBox</label>
+         <input type="checkbox">
+         <br>
+         <br>
+
+         <label for="">Select - Option</label>
+        <select name="" id="">
+            <option value="1">Option1</option>
+            <option value="2">Option2</option>
+            <option value="3">Option3</option>
+        </select>
+         <br>
+         <br>
+
+         <label for="">Datalist</label>
+         <input type="text" list="items">
+         <datalist id="items">
+            <option value="1">Option1</option>
+            <option value="2">Option2</option>
+            <option value="3">Option3</option>
+         </datalist>
+         <br>
+         <br>
+
+         <label for="">Colores</label>
+         <input type="color">
+         <br>
+         <hr>
+         <br>
+
+         <!--Carga de archivos-->
+
+         <label for="">Seleccion de Archivos</label>
+         <input type="file">
+         <br>
+         <hr>
+         <br>
+         
+         <!--Botones-->
+         
+         <label for="">Submit</label>
+         <input type="submit">
+         <br>
+         <br>
+
+         <label for="">Imagen</label>
+         <input type="image" src="imagenes/2C.png"> <!--pone una imagen en el boton-->
+         <br>
+         <br>
+
+         <label for="">Borrar Formulario</label>
+         <input type="reset">
+         <br>
+         <br>
+
+         <label for="">Boton sin funcionalidad</label> <!--para que otros lenguajes le pongan funcionalidad-->
+         <input type="button" value="Input Boton"> 
+         <button>Boton Simple</button>
+         <br>
+         <hr>
+         <br>
+
+         <!--Barra de progreso-->
+         <progress max="100" value="20"></progress>
+            <!--Por ahora es estatica despues se puede programar con js para que sea dinamica y muestre el progreso del llenado del formulario-->
+
+
+    </form>
+</body>
+</html>
