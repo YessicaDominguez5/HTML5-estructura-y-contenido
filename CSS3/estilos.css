@@ -1,0 +1,168 @@
+
+/*Estilos a carpetaenmismonivel*/
+
+
+/*Por Selector*/
+h1{
+    color:blueviolet
+    
+    
+}
+
+/*Por Id (ya no se utiliza tanto)*/
+
+#primerParrafo{
+    
+    color: green;
+}
+
+/*Por Clase*/
+
+.grupoParrafos{
+    
+    
+    color:blue;
+    
+    
+}
+
+/*Por Estado (En este caso cuando le pasas el mouse por arriba cambia de color)*/
+
+h1:hover{
+    
+    color: black;
+    
+}
+
+/*Por Atributo (Ej: todos los imputs de tipo Number tienen un background-color diferente*/
+
+input[type = "number"]{
+    
+    background-color: chocolate;
+}
+
+/*A Todo(los textos en este caso  de todas las paginas, pero sin el important no lo cambia porque toma los atributos de arriba)*/
+/*
+
+*{
+    
+color: red !important;
+}
+*/
+
+
+
+/*Estilos de archivointerno*/
+
+#contenedor p{
+    
+    /*A todos los parrafos dentro de contenedor*/
+    color: yellow;
+}
+
+#contenedor p:first-child{
+    
+    /*El primer parrafo azul*/
+    
+    color: blue;
+    
+    
+}
+
+#contenedor p:nth-child(3){
+    
+    /*El 3er parrafo en color coral*/
+    
+    color:coral;
+    
+}
+
+#contenedor p:nth-child(odd){
+    
+    /*Los parrafos impares*/
+    
+    color:blueviolet;
+    
+}
+
+#contenedor p:nth-child(even){
+    
+    /*Los parrafos pares*/
+    
+    color:aqua;
+    
+}
+@font-face {
+ font-family: "Cairo", serif;
+
+  src: url(../archivo/fonts/static/Cairo-Regular.ttf);
+}
+
+#contenedor p:last-child{
+    
+    /*El ultimo parrafo fucsia*/
+    
+color:fuchsia;
+font-family: "Cairo", serif;
+
+
+
+    }
+
+
+    
+    
+    
+    /*Fuentes */
+    
+
+    /*Fonts Basicas*/
+    
+    h1{
+        /*ESTILOS DE TEXTO*/
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2cm;
+        font-weight: 100;
+        font-style:italic; 
+        color: blue;
+        cursor: pointer;
+
+        /*ESPACIADO DE LETRAS*/
+
+        letter-spacing: 20px;
+
+        /*ESPACIADO DE PALABRAS*/
+
+        word-spacing: 20px;
+
+        /*INTERLINEADO*/
+        line-height: 100px;
+
+        /*SANGRIA*/
+
+        text-indent: 50px;
+
+        /*ALINEACION DE TEXTO*/
+
+        text-align: center;
+    }
+    
+    /*Fonts Externas ej Google Fonts  carpetaenmismonivel*/
+ 
+    /*link en html, 2da opcion import en css*/
+   /* @import url('https://fonts.googleapis.com/css2?family=Arima:wght@700&family=Comic+Neue&family=Open+Sans:ital@0;1&family=PT+Sans:wght@400;700&family=Playwrite+GB+S&display=swap');*/
+    /*ctrl + shift + P Google Fonts  insert Css @import y seleccionas la fuente que queres importar*/
+   /*p{P
+    
+    font-family: "Cairo", serif;
+
+   
+   
+   }*/
+   
+   /*Fonts Descargadas*/
+   
+   /*En google fonts pones descargar y te baja un rar, lo descomprimis en fonts del projecto  en style de enlaces*/
+   
+   
+   

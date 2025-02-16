@@ -4,23 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rutas</title>
+    <style>
+
+        div{
+            
+            width: 300px;
+            height: 300px;
+
+            /*Para que al agrandar o achicar la pantalla no cambie mucho el tamano del div*/
+            max-width: 400px; 
+            min-width: 300px;
+
+            max-height: 400px;
+            min-height: 300px;
+
+            /*Padding*/
+            
+            /*padding-top: 20px;
+            padding-left: 30px;
+            padding-right: 50px;
+            padding-bottom: 20px;*/
+            
+            padding: 20px 50px 20px 30px; /*en sentido de las agujas del rejoj arriba, derecha, abajo, izquierda  SIN COMAS*/
+
+            /*Border*/
+            /*border-width: 5px;
+            border-top-width: 10px;
+            border-bottom-width: 20px;
+            border-color: black;
+            border-style:dotted;*//*Necesario para que me muestre el border*/
+
+            border: 10px dotted black;
+            border-radius:30%; /*Esquinas redondeadas*/
+           
+            /*Margin*/
+
+            /*margin: 50px 100px 35px 10px;*/
+            margin: auto; /*lo centra*/
+
+            /*Sombras*/
+
+            /*eje x(se corre la sombra a la derecha o con valores negativos a la izquierda), 
+              eje y(se corre la sombra hacia arriba y hacia abajo) 
+            , difuminacion(desenfoque), 
+            propagacion(se va haciendo mas grande)*/
+
+            box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.7);
+
+            /*Sombra multiple*/
+
+            box-shadow: 2px 2px 0 5px #850000,
+                        6px 6px 2px 10px #9c2929,
+                        12px 12px 8px 20px #976767;
+
+
+
+
+
+
+            /*palabra clave*/
+
+            background-color: red;
+
+            /*Hexadecimal*/
+
+            background-color: #55164d;
+
+            /*RGB*/
+
+            background-color: rgb(53, 83, 53);
+           
+            /*HSL No se utiliza mucho por su complejidad*/
+
+            background-color: hsl(250deg, 30%, 50%); /*grados, saturacion, brillo*/
+
+            /*Transparencia*/
+
+            background-color: transparent;
+            background-color: rgba(2, 15, 1, .5); /*ultimo valor 0 totalmente transparente, 1 totalmente el color sin transparencias*/
+            background-color: hsl(250deg, 30%, 50%, 50%);/*Lo mismo el ultimo valor 0% totalmente transparente, 100% totalmente el color sin transparencias)%*/
+
+            /*Degradado*/
+            
+            background:linear-gradient(90deg, blue, red); /*Los grados hacia donde se degrada*/
+            background: radial-gradient(blue, purple ,green, yellow, orange, red ); /*se degrada en circulos*/
+            
+        }
+
+        h1{
+            /*Sombras en texto*/
+
+            text-shadow: 5px 15px 4px rgba(0, 0, 0, 0.7);
+        }
+    </style>
 </head>
 <body>
     
-
-    <!--Carpeta Raiz si estas al mismo nivel-->
-
-    <a href="carpetaenmismonivel.html">Mismo Nivel</a>
-
-
-    <!--Carpeta Interna-->
-
-    <a href="carpetaInterna.html/archivointerno.html">Interna</a>
-
-     <!--Carpeta Externa-->
-
-     <a href="../etiquetasDeTexto.html">Externa</a>
-
-
-</body>
-</html>
+    <div>
+        
+        
+        <!--Carpeta Raiz si estas al mismo nivel-->
+        
+        <a href="carpetaenmismonivel.html">Mismo Nivel</a>
+        
+        
+        <!--Carpeta Interna-->
+        
+        <a href="carpetaInterna.html/archivointerno.html">Interna</a>
+        
+        <!--Carpeta Externa-->
+        
+        <a href="../etiquetasDeTexto.html">Externa</a>
+        
+    </div>
+    <h1>Texto de Prueba</h1>
+        
+    </body>
+    </html>
