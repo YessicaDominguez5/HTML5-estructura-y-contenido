@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Blend Mode</title>
+
+    <style>
+        .container{
+
+            width: 100%;
+            height: 100vh;
+            background: url(imagenes/cenicienta.png), url(imagenes/Baby-Dory-scaled.jpg), linear-gradient(blue, green);
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: multiply; /*Superpone las imagenes y colores*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>
