@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="archivo/fontAwesome/fontawesome-free-6.7.2-web/css/all.css">
+    <title>ESTILOS A TABLAS</title>
+    <style>
+
+        table{
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            border-collapse: collapse; /*estiloss de borde  de la tabla*/
+        }
+
+        table th,
+        table td{
+            
+            border: 1px solid #dee2e6;
+            padding: 5px 10px;
+        }
+
+        table th,
+        table td:first-child{ /*A los th que es el encabezado y a la primera columna*/
+
+            background-color: #17a2b8;
+            color: #fff;
+            font-weight: 600;
+            width: 100px;
+
+        }
+
+        table td span{
+            
+            margin-right: 15px; /*Hace que los iconos se separen porque como estan divididos en 3 span diferentes les da a c/u un margen a la derecha*/
+            cursor: pointer;
+
+        }
+        table td span:hover{
+
+            opacity: 0.5;
+
+            /*Cuando pasas el  cursor arriba del icono se pone mas transparente*/
+
+        }
+
+        table td span:nth-child(1){
+            /*Al primer hijo, el icono de informacion*/
+
+            color: #17a2b8;
+
+        }
+
+        
+        table td span:nth-child(2){
+            /*Al segundo hijo, el icono de editar*/
+
+            color: #28a745;
+
+        }
+
+        
+        table td span:nth-child(3){
+            /*Al tercer hijo, el icono de eliminar*/
+
+            color: #dc3545;
+            margin-right: 0px; /*como tiene el margin-right para que se separen los elementos no queda centrado por eso al ultimo elemento le sacamos el margin right*/
+
+        }
+
+        table tr:nth-child(odd){
+
+            /*Las filas impares*/
+
+            background-color: rgba(0, 0, 0, 0.05);
+
+        }
+
+        table tr:hover{
+
+            /*Cuando pase el mouse por arriba de las filas*/
+
+            background-color: rgba(0, 0, 0, 0.1);
+            
+
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+                <th>Opciones</th>
+            
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                    <td>123456</td>
+                    <td>Yanina</td>
+                    <td>Latorre</td>
+                    <td>xxxxxxx@gmail.com</td>
+                    <td><span class="fas fa-info-circle"></span> <span class="fas fa-edit"></span> <span class="fas fa-trash-alt"></span></td>   
+
+
+                </tr>
+                <tr>
+
+                    <td>157357</td>
+                    <td>Yanina</td>
+                    <td>Latorre</td>
+                    <td>xxxxxxx@gmail.com</td>
+                    <td><span class="fas fa-info-circle"></span> <span class="fas fa-edit"></span> <span class="fas fa-trash-alt"></span></td>   
+
+
+                </tr>
+                <tr>
+
+                    <td>7967969</td>
+                    <td>Yanina</td>
+                    <td>Latorre</td>
+                    <td>xxxxxxx@gmail.com</td>
+                    <td><span class="fas fa-info-circle"></span> <span class="fas fa-edit"></span> <span class="fas fa-trash-alt"></span></td>   
+
+
+                </tr>
+                <tr>
+
+                    <td>798090</td>
+                    <td>Yanina</td>
+                    <td>Latorre</td>
+                    <td>xxxxxxx@gmail.com</td>
+                    <td><span class="fas fa-info-circle"></span> <span class="fas fa-edit"></span> <span class="fas fa-trash-alt"></span></td>   
+
+
+                </tr>
+                <tr>
+
+                    <td>0985687</td>
+                    <td>Yanina</td>
+                    <td>Latorre</td>
+                    <td>xxxxxxx@gmail.com</td>
+                    <td><span class="fas fa-info-circle"></span> <span class="fas fa-edit"></span> <span class="fas fa-trash-alt"></span></td>   
+
+
+                </tr>
+                <tr>
+
+                    <td>89879789</td>
+                    <td>Yanina</td>
+                    <td>Latorre</td>
+                    <td>xxxxxxx@gmail.com</td>
+                    <td><span class="fas fa-info-circle"></span> <span class="fas fa-edit"></span> <span class="fas fa-trash-alt"></span></td>   
+
+
+                </tr>
+                <tr>
+
+                    <td>968787</td>
+                    <td>Yanina</td>
+                    <td>Latorre</td>
+                    <td>xxxxxxx@gmail.com</td>
+                    <td><span class="fas fa-info-circle"></span> <span class="fas fa-edit"></span> <span class="fas fa-trash-alt"></span></td>   
+
+
+                </tr>
+                <tr>
+
+                    <td>769898</td>
+                    <td>Yanina</td>
+                    <td>Latorre</td>
+                    <td>xxxxxxx@gmail.com</td>
+                    <td><span class="fas fa-info-circle"></span> <span class="fas fa-edit"></span> <span class="fas fa-trash-alt"></span></td>   
+
+
+                </tr>
+                <tr>
+
+                    <td>1097790</td>
+                    <td>Yanina</td>
+                    <td>Latorre</td>
+                    <td>xxxxxxx@gmail.com</td>
+                    <td><span class="fas fa-info-circle"></span> <span class="fas fa-edit"></span> <span class="fas fa-trash-alt"></span></td>   
+
+
+                </tr>
+                <tr>
+
+                    <td>869998</td>
+                    <td>Yanina</td>
+                    <td>Latorre</td>
+                    <td>xxxxxxx@gmail.com</td>
+                    <td><span class="fas fa-info-circle"></span> <span class="fas fa-edit"></span> <span class="fas fa-trash-alt"></span></td>   
+
+
+                </tr>
+                <tr>
+
+                    <td>1896969</td>
+                    <td>Yanina</td>
+                    <td>Latorre</td>
+                    <td>xxxxxxx@gmail.com</td>
+                    <td><span class="fas fa-info-circle"></span> <span class="fas fa-edit"></span> <span class="fas fa-trash-alt"></span></td>   
+
+
+                </tr>
+                <tr>
+
+                    <td>15876877</td>
+                    <td>Yanina</td>
+                    <td>Latorre</td>
+                    <td>xxxxxxx@gmail.com</td>
+                    <td><span class="fas fa-info-circle"></span> <span class="fas fa-edit"></span> <span class="fas fa-trash-alt"></span></td>   
+
+
+                </tr>
+            </tbody>
+    </table>
+</body>
+</html>
